@@ -1,0 +1,67 @@
+@import 'variables';
+
+.add-edit-task{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: $form-bg;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.add-edit-task__form{
+		width: 500px;
+		display: flex;
+		flex-direction: column;
+		padding: 20px;
+		gap: 10px;
+		border-radius: $border-radius1;
+		background: $main-color1;
+		.add-edit-task__title{
+			text-align: center;
+		}
+		.add-edit-task__input-group{
+			width: 100%;
+			margin-bottom: 10px;
+			input,textarea{
+				width: 100%;
+				padding: 15px;
+				border: none;
+				outline: none;
+				border-radius: $border-radius1;
+				margin-top: 5px;
+				background: $main-color2;
+				color: $text-color1;
+			}
+		}
+
+		.add-edit-task__checkbox-label{
+			min-width: max-content;
+			display: flex;
+			align-items: center;
+			cursor: pointer;
+			padding: 5px 0;
+			input{
+				margin-right: 10px;
+			}
+		}
+
+		.add-edit-task__button{
+			width: 100%;
+			height: 50px;
+			cursor: pointer;
+			background: $accent-color1;
+			border: none;
+			border-radius: $border-radius1;
+			margin-top: 5px;
+			transition: .2s;
+			color: $main-color1;
+			&:hover{
+				background: $accent-color1-hover;
+			}
+		}
+
+	}
+}
